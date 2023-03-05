@@ -1,0 +1,373 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+@font-face {
+	font-family: myFont;
+	src: url(./Demo_Fonts/Fontspring-DEMO-biennale-black.otf);
+}
+
+body {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	background-color: #fff7f0;
+	margin: 1em 0;
+}
+
+/* styling nav */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 2em;
+	margin-top: 2em;
+}
+
+nav > button {
+	background-color: black;
+	color: #fff;
+	font-size: 1rem;
+	padding: 1em;
+}
+
+.circle {
+	height: 30px;
+	width: 30px;
+	color: white;
+	filter: invert(1);
+}
+
+.btn-free {
+	border-radius: 5em;
+	padding: 1em 2em;
+}
+
+/* styling header */
+
+header,
+.myInfo,
+.scroll-img,
+/* .myInfo, */
+.bookMe {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin-top: 2em;
+}
+
+header > h1 {
+	margin: 0.5em;
+	font-size: 2.5rem;
+}
+
+header > p {
+	width: 50vw;
+	margin: 0.5em;
+	color: #8d8681;
+	line-height: 1.5;
+	font-size: 1rem;
+}
+
+/* styling grid with images */
+
+.grid-img {
+	display: grid;
+	height: auto;
+	width: 80vw;
+	gap: 1rem;
+	grid-auto-columns: 1fr;
+	grid-auto-rows: 20vh;
+	grid-template-areas:
+		"first first"
+		"first first"
+		"first first"
+		"second third"
+		"fourth fourth"
+		"fifth fifth"
+		"sixth sixth";
+	margin: 1.5em auto;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.grid-pos-text {
+	position: absolute;
+	bottom: 0.5em;
+	left: 1em;
+}
+.graphicDesign {
+	background-color: #755cde;
+	grid-area: first;
+	position: relative;
+}
+
+.UIUX {
+	background-color: #f5a560;
+	grid-area: second;
+	position: relative;
+}
+
+.Apps {
+	background-color: #f39d9e;
+	grid-area: third;
+	position: relative;
+}
+
+.Illustrations {
+	background-color: #ea7564;
+	grid-area: fourth;
+	position: relative;
+}
+
+.Photography {
+	background-color: #62c4b7;
+	grid-area: fifth;
+	position: relative;
+}
+
+.motionGraphics {
+	background-color: #55204a;
+	grid-area: sixth;
+	position: relative;
+}
+
+/* styling myInfo */
+
+.pic-container {
+	margin: 2em 0;
+}
+.profilepic {
+	padding: 8em;
+	border-radius: 1000px;
+	background-color: #f39d9e;
+}
+
+.orangeButton {
+	background-color: #ea7564;
+	color: #fff;
+	font-size: 1rem;
+	padding: 1em 1.5em;
+	border: none;
+}
+
+.myInfo-text > h2,
+.myInfo-text > p {
+	margin: 1em 0;
+	width: 90vw;
+}
+
+.myInfo-text > h2 {
+	font-size: 1.7rem;
+}
+.myInfo-text > p {
+	line-height: 1.5;
+	color: #8d8681;
+}
+
+.myInfo > button {
+	margin: 2em 0;
+}
+
+/* scrolling img */
+
+.scroll-img > h2 {
+	margin: 1em 0;
+}
+
+/* start of images */
+
+.row-img {
+	/* overflow: auto; */
+	white-space: nowrap;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	overflow: hidden;
+	width: 100vw;
+	gap: 1em;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+	display: inline-block;
+	width: 12em;
+	height: 12em;
+	margin: 0 1em;
+	gap: 1em;
+}
+
+.img1 {
+	background-color: #755cde;
+}
+
+.img2 {
+	background-color: #f5a560;
+}
+
+.img3 {
+	background-color: #f39d9e;
+}
+
+.img4 {
+	background-color: #ea7564;
+}
+
+.img5 {
+	background-color: #62c4b7;
+}
+
+/* end of images */
+
+.left,
+.right {
+	display: inline-flex;
+	padding: 0.5em;
+	margin: 1em;
+	border-radius: 100px;
+	color: white;
+	background-color: black;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.left:hover {
+	cursor: pointer;
+}
+
+.arrow-left,
+.arrow-right {
+	height: 20px;
+	width: 20px;
+	color: white;
+	filter: invert(1);
+	cursor: pointer;
+}
+
+.arrow-left:hover {
+	cursor: pointer;
+}
+
+/* p{
+	transform: translateX();
+} */
+
+/* style book me */
+
+.bookMe {
+	background-color: black;
+	padding: 2em 1em;
+	color: white;
+	width: 70vw;
+	margin: 1em auto;
+	border-radius: 2em;
+	padding: 2em 1em;
+}
+
+.bookMe-text > h2,
+.bookMe-text > p,
+.bookMe > button {
+	margin: 1em 1em;
+}
+
+.bookMe-text > h2 {
+	font-size: 1.7rem;
+}
+.bookMe-text > p {
+	color: #8d8681;
+	line-height: 1.5;
+	font-size: 1rem;
+}
+
+/* media query for desktop */
+
+@media (min-width: 70em) {
+	br {
+		display: none;
+	}
+	.grid-img {
+		grid-template-areas:
+			"first first second third fifth fifth"
+			"first first fourth fourth sixth sixth";
+	}
+
+	.myInfo {
+		display: grid;
+		grid-template-areas: "pic info";
+		margin: 0 auto;
+		width: auto;
+
+		gap: 5em;
+	}
+
+	.myInfo > .pic-container {
+		grid-area: pic;
+	}
+
+	.profilepic {
+		padding: 12em;
+	}
+
+	.myInfo-text {
+		grid-area: info;
+		overflow-wrap: break-word;
+	}
+
+	.myInfo-text > h2,
+	.myInfo-text > p {
+		margin: 1em 0;
+		width: 40vw;
+	}
+
+	.myInfo-text > button {
+		margin: 0 auto;
+	}
+
+	.left,
+	.right {
+		display: none;
+	}
+
+	.bookMe {
+		display: grid;
+		gap: 3em;
+		grid-template-areas: "text button";
+		grid-template-columns: 60% 30%;
+		margin-top: 5em;
+	}
+
+	.bookMe-text {
+		grid-area: text;
+		text-align: left;
+	}
+
+	.bookMe > button {
+		grid-area: button;
+	}
+
+	.myInfo-text {
+		text-align: left;
+	}
+
+	.bookMe-text > h2 {
+		font-size: 2rem;
+		text-align: left;
+	}
+
+	.bookMe-text > h2,
+	.bookMe-text > p {
+		margin: 1em 0em;
+	}
+}
+
+/* helper classes */
+
+.invisible {
+	display: none;
+}
